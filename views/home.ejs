@@ -4,7 +4,7 @@
 <p> <%= startingContent %> </p>
 <% newPosts.forEach(function(newPost) { %>
   <h1> <%= newPost.title %> </h1>
-  <p> <%= newPost.content %> </p>
+  <p> <%= newPost.content.substring(0,100) + "..." %> </p>
 <% }) %>
 
 
